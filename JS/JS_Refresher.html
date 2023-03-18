@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //refresher --
+        //number
+        //null
+        //string
+        //boolean
+        //undefined
+
+        let a = 21
+        console.log(a);
+
+        let obj = {                                                     //object + functions in Object
+            a : 21,
+            b : 31,
+            func : function test(param) {
+                console.log("This is number ",param);
+                alert(param)
+            }
+        }
+
+        document.addEventListener("click",function ck(params) {                     //Click Event
+            console.log("Click Event");
+            // alert("Clicked")
+            let conf = confirm("Are you sure ?")
+            console.log(conf);
+        })
+
+        let arr = [2,3,4,5,6]   
+        console.log(this);                                                  //this
+        // console.log(arr);
+        // arr.forEach(element => {
+        //     console.log(element);
+        // });
+
+        let mobj ={                                                         //object + arrow func + calling THIS in mobj
+            i : this,
+            my_Func : (number)=>{ 
+            console.log("The number is : ",this);   
+            }
+        }
+
+        mobj.my_Func(22)
+        console.log(mobj.i);                            //execute Windows doc
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
